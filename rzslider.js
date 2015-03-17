@@ -884,8 +884,7 @@ function throttle(func, wait, options) {
         $document.unbind('mousemove.rzslider');
         $document.unbind('mouseup.rzslider');
       }
-
-      this.scope.$emit('slideEnded');
+      this.scope.$emit('slideEnded',this);
 
       this.tracking = '';
     }
